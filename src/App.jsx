@@ -5,11 +5,11 @@ import TaskApp from "./components/TaskApp";
 
 
 
+import task from "./data/tasks.json"
 function App() {
- 
   return (
     <div>
-  <TaskApp />
+  <TaskApp task={task} />
  
  
   </div>

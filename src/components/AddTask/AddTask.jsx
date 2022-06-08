@@ -11,13 +11,13 @@ const AddTask = ({add}) => {
   }
   const handleClick = () => {
     add(text)
-    setText("")
+    // setText("")
     console.log(text)
   }
   return (
     <div className={styles.todoForm}>
 
-      <input data-testid="add-task-input" type="text" value={text} onChange={addtodo}/>
+      <input data-testid="add-task-input" type="text" onChange={addtodo}/>
       <button data-testid="add-task-button" onClick={handleClick}>Add</button>
     </div>
   );
